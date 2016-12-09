@@ -1,0 +1,27 @@
+{
+  "name": "sudoku",
+  "version": "1.0.0",
+  "description": "soduku",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "istanbul cover jasmine",
+    "start": "babel-node src/index.js",
+    "build": "babel src --out-dir lib&&babel test --out-dir spec"
+  },
+  "repository": {
+    "url": "git+https://github.com/uncledu/soduku.git",
+    "type": "git"
+  },
+  "author": "uncledu <uncledu@aliyun.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-strict-mode": "^6.18.0",
+    "jasmine": "^2.5.2"
+  }
+}
